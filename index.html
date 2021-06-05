@@ -6,7 +6,6 @@
 		</link>
 		<link rel="stylesheet" href="indexstyles.css">
 		</link>
-		<script src="https://kit.fontawesome.com/218d6c5171.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -14,10 +13,11 @@
 			<div class="row card-row">
 				<div class="col-11 col-md-9 col-lg-6 mx-auto">
 					<div class="card text-center bg-transparent border-0 text-light">
-						<img src="images/centered_profile.jpg" class="card-img-top mx-auto profile border border-ligh border-2" alt="Roy George Profile">
+						<img src="images/centered_profile.jpg" class="card-img-top mx-auto profile border border-light border-2" alt="Roy George Profile">
 						<div class="card-body">
 							<h5 class="card-title ">Roy George</h5>
-							<p class="card-text ">Fascinated by all forms of technology since my early days, I've dedicated a large portion of my life towards understanding how the digital world around us works. A strong kinesthetic learner, I learn at an extremely rapid pace and find myself very comfortable in just about any environment. I always look forward to challenging myself in new ways and to stay ahead of the times.</p>
+							<!-- <p class="card-text ">Fascinated by all forms of technology since my early days, I've dedicated a large portion of my life towards understanding how the digital world around us works. A strong kinesthetic learner, I learn at an extremely rapid pace and find myself very comfortable in just about any environment. I always look forward to challenging myself in new ways and to stay ahead of the times.</p> -->
+							<p id="cardText" class="card-text"></p>
 						</div>
 					</div>
 				</div>
@@ -26,30 +26,51 @@
 
 		<script src="./granim/granim.js-2.0.0/dist/granim.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-		<script>var granimInstance = new Granim({
-			element: '#canvas-image-blending',
-			direction: 'top-bottom',
-			isPausedWhenNotInView: true,
-			image : {
-			    source: './granim/granim.js-2.0.0/docs/assets/img/wallpaper1.jpg',
-			    blendingMode: 'overlay',
-			    stretchMode: ['stretch','stretch'],
-			    position: ['center','bottom'],
-			},
-			states : {
-			    "default-state": {
-			        gradients: [
-			            ['#29323c', '#485563'],
-			            ['#FF6B6B', '#556270'],
-			            ['#80d3fe', '#7ea0c4'],
-			            ['#d9c052', '#eceba3']
-			        ],
-			        transitionSpeed: 3500
-			    }
-			}
-			});
+		<script src="https://kit.fontawesome.com/218d6c5171.js" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+		<script>
 			
+
+			var granimInstance = new Granim({
+				element: '#canvas-image-blending',
+				direction: 'top-bottom',
+				isPausedWhenNotInView: true,
+				image : {
+					source: './granim/granim.js-2.0.0/docs/assets/img/wallpaper1.jpg',
+					blendingMode: 'overlay',
+					stretchMode: ['stretch','stretch'],
+					position: ['center','bottom'],
+				},
+				states : {
+					"default-state": {
+						gradients: [
+							['#29323c', '#485563'],
+							['#FF6B6B', '#556270'],
+							['#80d3fe', '#7ea0c4'],
+							['#d9c052', '#eceba3']
+						],
+						transitionSpeed: 4500
+					}
+				}
+				});
 			
+
+			var options = {
+				strings: ['An avid programmer.', 'A passionate leader.', "Fascinated by all forms of technology since my early days, I've dedicated a large portion of my life towards understanding how the digital world around us works.^750 A strong kinesthetic learner, I learn at an extremely rapid pace and find myself very comfortable in just about any environment.^750 I always look forward to challenging myself in new ways and to stay ahead of the times. ^5000"],
+				typeSpeed: 40,
+				smartBackspace: true,
+				startDelay: 1000,
+				backSpeed:25,
+				backDelay:1000,
+				autoInsertCss: false,
+				loop: true,
+				loopCount: Infinity,
+				cursorChar: '',
+
+			};
+
+			var typed = new Typed('#cardText', options);
 			
 		</script>  
 
