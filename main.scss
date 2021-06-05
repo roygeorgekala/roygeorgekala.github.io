@@ -1,0 +1,38 @@
+$primary:       rgb(255, 174, 0);
+//$secondary:     $gray-600;
+//$success:       $green;
+//$light:         $gray-100;
+//$info:          $cyan;
+//$warning:       $yellow;
+//$danger:        $red;
+//$dark:          $gray-900;
+$border-radius:   1rem ;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+
+// body {
+//     background: linear-gradient(-45deg, #ec1e63, #692397, #23a6d5, #1bad8b);
+//     background-size: 400% 400%;
+//     animation: gradient 12s ease infinite;
+//   }
+
+//   @keyframes gradient {
+//     0% {
+//       background-position: 50% 50%;
+//     }
+//     25% {
+//       background-position: 0% 0%;
+//     }
+//     50% {
+//       background-position: 100% 50%;
+//     }
+//     75% {
+//       background-position: 100% 100%;
+//     }
+//     100% {
+//       background-position: 50% 50%;
+//     }
+//   }
+

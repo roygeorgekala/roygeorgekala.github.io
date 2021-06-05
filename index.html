@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Roy George</title>
+		<link rel="stylesheet" href="main.css">
+		</link>
+		<link rel="stylesheet" href="indexstyles.css">
+		</link>
+		<script src="https://kit.fontawesome.com/218d6c5171.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="container">
+			<canvas id="canvas-image-blending"></canvas>
+			<div class="row card-row">
+				<div class="col-11 col-md-9 col-lg-6 mx-auto">
+					<div class="card text-center bg-transparent border-0 text-light">
+						<img src="images/profile.jpg" class="card-img-top mx-auto profile border border-ligh border-2" alt="Roy George Profile">
+						<div class="card-body">
+							<h5 class="card-title ">Roy George</h5>
+							<p class="card-text ">Fascinated by all forms of technology since my early days, I've dedicated a large portion of my life towards understanding how the digital world around us works. A strong kinesthetic learner, I learn at an extremely rapid pace and find myself very comfortable in just about any environment. I always look forward to challenging myself in new ways and to stay ahead of the times.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./granim/granim.js-2.0.0/dist/granim.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+		<script>var granimInstance = new Granim({
+			element: '#canvas-image-blending',
+			direction: 'top-bottom',
+			isPausedWhenNotInView: true,
+			image : {
+			    source: './granim/granim.js-2.0.0/docs/assets/img/wallpaper1.jpg',
+			    blendingMode: 'overlay',
+			    stretchMode: ['stretch','stretch'],
+			    position: ['center','bottom'],
+			},
+			states : {
+			    "default-state": {
+			        gradients: [
+			            ['#29323c', '#485563'],
+			            ['#FF6B6B', '#556270'],
+			            ['#80d3fe', '#7ea0c4'],
+			            ['#f0ab51', '#eceba3']
+			        ],
+			        transitionSpeed: 4000
+			    }
+			}
+			});
+			
+			
+			
+		</script>  
+
+	</body>
+</html>
